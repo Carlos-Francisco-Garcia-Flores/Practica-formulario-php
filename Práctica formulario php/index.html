@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario de registro</title>
+
+    <link rel="stylesheet" href="./datos/style.css">
+
+
+</head>
+
+<body>
+
+    <div>          
+                <p id="T">Registrate </p>
+
+        <div class="containerForm1">
+            
+            <form action="./conexion.php" method="post">
+
+                <fieldset>
+
+                        <label> Nombre: </label>
+                            <input type="text" placeholder="Ingresa tu nombre" name="Nam" required minlength="16"
+                                maxlength="36" pattern="[A-Za-z ]*">
+                            </input>
+                            <p></p>
+
+                       
+                            <label for="user">Usuario: </label>
+                            <input type="text" name="user" id="user" required minlength="6" maxlength="12"
+                                placeholder="Nombre Usuario" pattern="[A-Za-z0-9_#&%$]*">
+                            </input>
+                        
+                        <p></p>                     
+
+                            <label> Contraseña: </label>
+                            <input type="password" placeholder="Ingresa tu contraseña" name="Pass" id="Pass" required
+                                minlength="8" maxlength="16" pattern="[A-Za-z0-9_&#%$]*">
+                            </input>
+                        
+                        <p></p>
+
+                        <label for="pass2"> Confirma tu contraseña: </label>
+                            <input type="password" name="Pass2" id="Pass2" placeholder="Confirma tu contraseña" required
+                            minlength="8" maxlength="16" pattern="[A-Za-z0-9_&#%$]*">
+                                                   
+                        <p></p>
+
+                        
+                       <label for="mail">Email: </label>
+                            <input type="email" name="Email" id="email" placeholder="Correo" required>
+                        
+                        <p></p>
+
+                       <label for="tel">Telefono: </label>
+                            <input type="text" name="tel" id="tel" placeholder="Telefono" required minlength="10"
+                                maxlength="10" pattern="[0-9]{10}">
+                        
+                        <p></p>
+
+                       
+                            <label for="genero"> Género: </label>
+                            <select name="genero" id="genero">
+                                <option value="0">Selecciona un genero</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                                <option value="X">Otres</option>
+                            </select>
+
+                        <p></p>      
+
+                            <label for="fchnac">Fecha de Nacimiento: </label>
+                            <input type="date" name="fchnac" id="fchnac" required>
+
+                        <p></p>
+
+                        <label> RFC: </label>
+                            <input type="text" placeholder="Ingresa tu RFC" name="RFC" required minlength="13"
+                                maxlength="13" pattern="[A-Z]{4}[0-9]{6}[A-Z0-9]{3}">
+                            
+                        <p></p>       
+                        
+                        <div id="validacion">  </div>
+
+                        <p></p>
+        
+                                <input type="submit" value="Registrarse" id="button" name="boton" />                      
+
+                </fieldset>
+               
+        </div>
+
+    </div> 
+    <script src="./datos/scripts.js"></script>
+
+</body>
+
+</html>

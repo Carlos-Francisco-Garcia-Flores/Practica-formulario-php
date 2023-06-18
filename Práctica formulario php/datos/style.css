@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    color: aliceblue;
+    background-image:url('./fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+
+}
+#T{
+    font-size: 40px;
+    font-family:sans-serif;
+}
+
+.containerForm1{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15PX;
+    padding: 2%;
+    
+    
+}
+
+fieldset{
+    margin-top: 1px;
+    border-style: ridge;
+    border-color: #050505ee;
+    background-color: black; 
+    border-radius: 15px;
+    font-size: medium;
+    opacity: 0.8;
+    font-family:sans-serif;
+
+}
+
+#validacion{
+    font-size: 40px;
+    font-family:sans-serif;
+}
